@@ -1,0 +1,14 @@
+{
+  "timestamp": "1970-01-01T00:00:00.000Z",
+  "description": "Optimized site with mobile responsiveness, speed improvements, enhanced colors, and affiliate links",
+  "files": {
+    "index.html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/vite.svg\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1\" />\n    <title>Indian Herbs for Weight Loss: Natural Ayurvedic Solutions</title>\n    <meta name=\"description\" content=\"Discover powerful Indian herbs for weight loss. Natural Ayurvedic solutions to support your weight management journey. Try our benefits calculator today!\" />\n    <link rel=\"canonical\" href=\"https://indianherbsforweightloss.com\" />\n    <meta name=\"theme-color\" content=\"#15803d\" />\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n    <link rel=\"dns-prefetch\" href=\"https://fonts.googleapis.com\" />\n  </head>",
+    "vite.config.ts": "import { defineConfig } from 'vite';\nimport react from '@vitejs/plugin-react';\n\nexport default defineConfig({\n  plugins: [react()],\n  optimizeDeps: {\n    exclude: ['lucide-react'],\n  },\n  build: {\n    minify: 'terser',\n    cssMinify: true,\n    rollupOptions: {\n      output: {\n        manualChunks: {\n          vendor: ['react', 'react-dom', 'react-router-dom'],\n          icons: ['lucide-react']\n        }\n      }\n    }\n  }\n});",
+    "src/components/WeightLossCalculator.tsx": "// Full content of WeightLossCalculator.tsx",
+    "src/pages/Home.tsx": "// Full content of Home.tsx",
+    "src/components/Footer.tsx": "// Full content of Footer.tsx",
+    "src/pages/About.tsx": "// Full content of About.tsx",
+    "src/pages/Contact.tsx": "// Full content of Contact.tsx",
+    "src/components/CookieBanner.tsx": "// Full content of CookieBanner.tsx"
+  }
+}
